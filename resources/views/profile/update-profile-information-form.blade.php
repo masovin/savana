@@ -4,7 +4,7 @@
     </x-slot>
 
     <x-slot name="description">
-        {{ __('Update your account\'s profile information and email address.') }}
+        {{ __('Update your account\'s profile information.') }}
     </x-slot>
 
     <x-slot name="form">
@@ -59,11 +59,11 @@
             <x-jet-input-error for="name" class="mt-2" />
         </div>
 
-        <!-- Email -->
+        <!-- Username -->
         <div class="col-span-6 sm:col-span-4">
-            <x-jet-label for="email" value="{{ __('Email') }}" />
-            <x-jet-input id="email" type="email" class="mt-1 block w-full" wire:model.defer="state.email" />
-            <x-jet-input-error for="email" class="mt-2" />
+            <x-jet-label for="username" value="{{ __('Username') }}" />
+            <x-jet-input id="username" type="text" class="mt-1 block w-full" wire:model.defer="state.username" readonly />
+            <x-jet-input-error for="username" class="mt-2" />
         </div>
     </x-slot>
 
